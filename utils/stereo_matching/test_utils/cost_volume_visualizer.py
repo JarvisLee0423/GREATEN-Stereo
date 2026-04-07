@@ -49,12 +49,8 @@ def cv_visualizer(model: nn.Module, left_img: torch.Tensor, right_img: torch.Ten
                 rearrange(left_feat, "b c h w -> (b h w) c").unsqueeze(-2),
             ) * (c ** -0.5)
             cost_volumes[key + "_softmax"] = rearrange(temp, "(b h w) d c -> b c d h w", b=b, h=h, w=w)
-        if key == "geo" and "agei" in str(type(model)):
-            cost_volumes[key + "_softmax"] = getattr(getattr(model, "geo_encoding_volume"), "classifier")(temp)
         if key == "geo" and "igev" in str(type(model)):
             cost_volumes[key + "_softmax"] = getattr(model, "classifier")(temp)
-        if key == "global_cv" and "uaei" in str(type(model)):
-            cost_volumes[key + "_softmax"] = getattr(getattr(getattr(model, "cost_volume_aggregator"), "cv_refiner"), "cv_classifier")(temp)
     
     if width != left_img.shape[-1]:
         scale = width / left_img.shape[-1]
