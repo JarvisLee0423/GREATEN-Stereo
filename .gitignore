@@ -1,0 +1,12 @@
+__pycache__
+*.so
+*.pyc
+*.png
+*.pth
+*.txt
+*.ply
+*.egg-info
+.vscode
+.ipynb_checkpoints
+build
+experiments
