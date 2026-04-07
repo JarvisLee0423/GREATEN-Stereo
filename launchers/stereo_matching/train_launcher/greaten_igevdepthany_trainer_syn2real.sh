@@ -1,0 +1,30 @@
+python3 stereo_resumable_dist_trainer.py --name greaten-igevdepthany-stereo \
+--logdir ./experiments/greaten_stereo/igev-based/depthany/sim2real \
+--backbone_type vitl \
+--backbone_ckpt ./experiments/modules/backbones/depth_anything/depth_anything_v2_vitl.pth \
+--restore_ckpt ./greaten-igevdepthany-stereo-sceneflow-submit.pth \
+--optimizer adamw \
+--batch_size 8 \
+--seed 666 \
+--train_datasets syn_to_real_train \
+--train_datasets_root ~/Workspace/Researches/Datasets \
+--lr 0.0001 \
+--num_steps 200000 \
+--image_size 320 736 \
+--train_iters 22 \
+--wdecay 0.00001 \
+--eval_iters 32 \
+--cv_levels 2 \
+--cv_radius 4 \
+--n_downsample 2 \
+--n_gru_layers 3 \
+--channels 128 128 128 \
+--context_norm batch \
+--max_disp 192 \
+--spatial_scale -0.2 0.5 \
+--saturation_range 0.7 1.3 \
+--precision_dtype bfloat16 \
+--noyjitter \
+--infer_normal \
+--apply_st_augmentation \
+--mixed_precision

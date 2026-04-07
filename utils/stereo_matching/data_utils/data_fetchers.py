@@ -39,7 +39,7 @@ def fetch_training_data(args: argparse.Namespace, dataset_only=False) -> Union[d
             new_dataset = balanced
             logging.info(f"Adding {len(balanced)} samples from Booster Balanced.")
             logging.info(f"Adding {len(new_dataset)} samples from Booster Mixture Dataset.")
-        elif dataset_name == "sim_to_real_train":
+        elif dataset_name == "syn_to_real_train":
             sceneflow = SceneFlowStereoDataset(aug_params, f"{dataset_root}/SceneFlow", dstype="frames_finalpass")
             fallingthings = FallingThingsStereoDataset(aug_params, f"{dataset_root}/FallingThings")
             tartanair = TartanAirStereoDataset(aug_params, f"{dataset_root}/TartanAir")
@@ -55,7 +55,7 @@ def fetch_training_data(args: argparse.Namespace, dataset_only=False) -> Union[d
             logging.info(f"Adding {len(sintel)} samples from Sintel.")
             logging.info(f"Adding {len(hrvs)} samples from HRVS.")
             logging.info(f"Adding {len(vkitti2)} samples from Visual KITTI-2.")
-            logging.info(f"Adding {len(new_dataset)} samples from Sim to Real Mixture Dataset.")
+            logging.info(f"Adding {len(new_dataset)} samples from Syn to Real Mixture Dataset.")
         elif dataset_name == "rvc_mix_data_train":
             kitti12 = KITTIStereoDataset(aug_params, f"{dataset_root}/KITTI/2012/data_stereo_flow")
             kitti15 = KITTIStereoDataset(aug_params, f"{dataset_root}/KITTI/2015/data_scene_flow")
