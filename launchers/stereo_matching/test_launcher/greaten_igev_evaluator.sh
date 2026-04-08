@@ -1,12 +1,12 @@
-python3 stereo_dist_evaluator.py --name greaten-igev-stereo \
+python3 stereo_evaluator.py --name greaten-igev-stereo \
 --logdir ./experiments/greaten_stereo/igev-based/sceneflow/baseline \
 --backbone_type vitl \
 --backbone_ckpt ./experiments/modules/backbones/depth_anything/depth_anything_v2_vitl.pth \
 --dataset sceneflow \
 --dataset_root ~/Workspace/Researches/Datasets/SceneFlow \
 --restore_ckpt ./greaten-igev-stereo.pth \
+--eval_mode metric \
 --eval_iters 32 \
---seed 666 \
 --cv_levels 2 \
 --cv_radius 4 \
 --n_downsample 2 \
@@ -14,5 +14,4 @@ python3 stereo_dist_evaluator.py --name greaten-igev-stereo \
 --channels 128 128 128 \
 --context_norm batch \
 --max_disp 192 \
---precision_dtype bfloat16 \
 --infer_normal
