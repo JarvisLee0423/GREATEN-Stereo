@@ -83,6 +83,7 @@ pip install numpy==1.24.1
 pip install einops==0.8.1
 pip install open3d==0.19.0
 pip install kornia==0.7.3
+pip install setuptools==69.5.1
 
 cd utils/stereo_matching/cuda_utils/deformable_aggregation && pip install -e .
 ```
@@ -109,12 +110,14 @@ cd utils/stereo_matching/cuda_utils/deformable_aggregation && pip install -e .
 | Model | Link |
 | :-: | :-: |
 | DepthAnything V2 | [Download :laughing:](https://github.com/DepthAnything/Depth-Anything-V2) |
-| GREATEN-IGEV-SceneFlow-192 | Coming Soon |
-| GREATEN-Selective-SceneFlow-192 | Coming Soon |
-| GREATEN-DepthAny-IGEV-SceneFlow-192 | Coming Soon |
-| GREATEN-IGEV-Mixed-192 | Coming Soon |
-| GREATEN-Selective-Mixed-192 | Coming Soon |
-| GREATEN-DepthAny-IGEV-Mixed-192 | Coming Soon |
+| GREATEN-IGEV-SceneFlow-192 | [Download :laughing:](https://pan.baidu.com/s/1Gfbwayf6-ime-AkrZUhfzA?pwd=behc) |
+| GREATEN-Selective-SceneFlow-192 | [Download :laughing:](https://pan.baidu.com/s/1HqdpcvNM7-h5gy8LOl7Q8g?pwd=jhvr) |
+| GREATEN-DepthAny-IGEV-SceneFlow-192 | [Download :laughing:](https://pan.baidu.com/s/1CAZuu3OmheNLeiLNp9E9mA?pwd=362k) |
+| GREATEN-IGEV-Mixed-192 | [Download :laughing:](https://pan.baidu.com/s/1mi6czlCQTvFwuQ4am3S3Gw?pwd=ueby) |
+| GREATEN-Selective-Mixed-192 | [Download :laughing:](https://pan.baidu.com/s/1jXP_y2Z00ZOH-yj74WIbpg?pwd=bq8s) |
+| GREATEN-DepthAny-IGEV-Mixed-192 | [Download :laughing:](https://pan.baidu.com/s/1Q74sCq6t013-59nHv0YzFw?pwd=qmtu) |
+| GREATEN-IGEV-RVC-192 | [Download :laughing:](https://pan.baidu.com/s/1yFA3aX5tRhy75f1JqfXQhw?pwd=3vdq) |
+| GREATEN-DepthAny-IGEV-RVC-192 | [Download :laughing:](https://pan.baidu.com/s/1q4hwMbfGpA-SvJabCPCdAg?pwd=qyjh) |
 
 2. Change the following parameters in the script located at `launchers/stereo_matching/test_launcher/`.
     - `dataset`
