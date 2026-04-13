@@ -2,8 +2,8 @@
 This repository contains the source code for our paper.
 
 **Geometry Reinforced Efficient Attention Tuning Equipped with Normals for Robust Stereo Matching (GREATEN-Stereo)**
-<a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Li_Global_Regulation_and_Excitation_via_Attention_Tuning_for_Stereo_Matching_ICCV_2025_paper.pdf">
-  <img src="https://img.shields.io/badge/arXiv-2509.15891-b31b1b?logo=arxiv" alt='arxiv'>
+<a href="https://arxiv.org/pdf/2604.09142">
+  <img src="https://img.shields.io/badge/arXiv-2604.09142-b31b1b?logo=arxiv" alt='arxiv'>
 </a>
 
 Jiahao LI, Xinhong Chen, Zhengmin JIANG, Cheng Huang, Yung-Hui Li, Jianping Wang
@@ -187,7 +187,15 @@ GREAT-Stereo:
 }
 
 GREATEN-Stereo:
-coming soon
+@misc{li2026geometryreinforcedefficientattention,
+  title={Geometry Reinforced Efficient Attention Tuning Equipped with Normals for Robust Stereo Matching}, 
+  author={Jiahao Li and Xinhong Chen and Zhengmin Jiang and Cheng Huang and Yung-Hui Li and Jianping Wang},
+  year={2026},
+  eprint={2604.09142},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2604.09142}, 
+}
 ```
 
 ## Acknowledgements
