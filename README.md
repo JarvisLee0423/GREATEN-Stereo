@@ -187,14 +187,11 @@ GREAT-Stereo:
 }
 
 GREATEN-Stereo:
-@misc{li2026geometryreinforcedefficientattention,
-  title={Geometry Reinforced Efficient Attention Tuning Equipped with Normals for Robust Stereo Matching}, 
-  author={Jiahao Li and Xinhong Chen and Zhengmin Jiang and Cheng Huang and Yung-Hui Li and Jianping Wang},
-  year={2026},
-  eprint={2604.09142},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
-  url={https://arxiv.org/abs/2604.09142}, 
+@article{li2026geometry,
+  title={Geometry Reinforced Efficient Attention Tuning Equipped with Normals for Robust Stereo Matching},
+  author={Li, Jiahao and Chen, Xinhong and Jiang, Zhengmin and Huang, Cheng and Li, Yung-Hui and Wang, Jianping},
+  journal={arXiv preprint arXiv:2604.09142},
+  year={2026}
 }
 ```
 
